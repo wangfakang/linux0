@@ -32,8 +32,10 @@
       <section>
         <p><code>linux的I/O复用技术</code></p>
 
+<p>关于select poll epoll的讲解如下：　　　　　</p>
+
 <h1>
-<a id="select函数编程---" class="anchor" href="#select%E5%87%BD%E6%95%B0%E7%BC%96%E7%A8%8B---" aria-hidden="true"><span class="octicon octicon-link"></span></a>select函数编程   </h1>
+<a id="一select函数编程---" class="anchor" href="#%E4%B8%80select%E5%87%BD%E6%95%B0%E7%BC%96%E7%A8%8B---" aria-hidden="true"><span class="octicon octicon-link"></span></a>一．select函数编程   </h1>
 
 <pre><code>int select(int nfds,fd_set*readfd,fd_set*writefd,fd_set*expectd,struct timeval *timeout);
 </code></pre>
@@ -164,7 +166,7 @@
  }</pre></div>
 
 <h1>
-<a id="poll函数编程" class="anchor" href="#poll%E5%87%BD%E6%95%B0%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>poll函数编程</h1>
+<a id="二poll函数编程" class="anchor" href="#%E4%BA%8Cpoll%E5%87%BD%E6%95%B0%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>二．poll函数编程</h1>
 
 <div class="highlight highlight-source-c"><pre>#<span class="pl-k">include</span><span class="pl-s"><span class="pl-pds">&lt;</span>poll.h<span class="pl-pds">&gt;</span></span>
 
@@ -255,7 +257,7 @@ poll的特点：<br>
 对集合的清零与重置    </p>
 
 <h1>
-<a id="epoll的编程" class="anchor" href="#epoll%E7%9A%84%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>epoll的编程</h1>
+<a id="三epoll的编程" class="anchor" href="#%E4%B8%89epoll%E7%9A%84%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>三．epoll的编程</h1>
 
 <pre><code>#include&lt;sys/epoll.h&gt;
 </code></pre>
